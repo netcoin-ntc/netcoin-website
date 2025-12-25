@@ -1,0 +1,277 @@
+---
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>NetCoin (NTC) - Decentralized Network with Energy-Backed Consensus</title>
+		<meta name="description" content="NetCoin implements Proof of Network (PoNW) consensus, embedding brute-force puzzles directly into Mycelium routing decisions. Earn NTC by contributing to global network infrastructure." />
+		<style>
+			:root {
+				--primary: #2563eb;
+				--secondary: #64748b;
+				--accent: #f59e0b;
+				--dark: #0f172a;
+				--light: #f8fafc;
+			}
+
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+				line-height: 1.6;
+				color: var(--dark);
+				background: var(--light);
+			}
+
+			.hero {
+				background: linear-gradient(135deg, var(--primary), #1e40af);
+				color: white;
+				padding: 100px 20px;
+				text-align: center;
+				min-height: 80vh;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+			}
+
+			.hero h1 {
+				font-size: 3.5rem;
+				font-weight: 700;
+				margin-bottom: 1rem;
+				text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+			}
+
+			.hero p {
+				font-size: 1.25rem;
+				margin-bottom: 2rem;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+				opacity: 0.9;
+			}
+
+			.cta-buttons {
+				display: flex;
+				gap: 1rem;
+				justify-content: center;
+				flex-wrap: wrap;
+			}
+
+			.btn {
+				padding: 12px 24px;
+				border-radius: 8px;
+				text-decoration: none;
+				font-weight: 600;
+				transition: all 0.3s ease;
+				display: inline-block;
+			}
+
+			.btn-primary {
+				background: var(--accent);
+				color: var(--dark);
+			}
+
+			.btn-primary:hover {
+				background: #d97706;
+				transform: translateY(-2px);
+			}
+
+			.btn-secondary {
+				background: transparent;
+				color: white;
+				border: 2px solid white;
+			}
+
+			.btn-secondary:hover {
+				background: white;
+				color: var(--primary);
+			}
+
+			.section {
+				padding: 80px 20px;
+				max-width: 1200px;
+				margin: 0 auto;
+			}
+
+			.section h2 {
+				font-size: 2.5rem;
+				text-align: center;
+				margin-bottom: 3rem;
+				color: var(--dark);
+			}
+
+			.features {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 2rem;
+				margin-bottom: 4rem;
+			}
+
+			.feature-card {
+				background: white;
+				padding: 2rem;
+				border-radius: 12px;
+				box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+				text-align: center;
+				transition: transform 0.3s ease;
+			}
+
+			.feature-card:hover {
+				transform: translateY(-4px);
+			}
+
+			.feature-icon {
+				width: 64px;
+				height: 64px;
+				margin: 0 auto 1rem;
+				background: var(--primary);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				color: white;
+				font-size: 2rem;
+			}
+
+			.feature-card h3 {
+				font-size: 1.25rem;
+				margin-bottom: 1rem;
+				color: var(--dark);
+			}
+
+			.stats {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+				gap: 2rem;
+				text-align: center;
+			}
+
+			.stat-number {
+				font-size: 2.5rem;
+				font-weight: 700;
+				color: var(--primary);
+				margin-bottom: 0.5rem;
+			}
+
+			.footer {
+				background: var(--dark);
+				color: white;
+				padding: 40px 20px;
+				text-align: center;
+			}
+
+			.footer a {
+				color: var(--accent);
+				text-decoration: none;
+			}
+
+			@media (max-width: 768px) {
+				.hero h1 {
+					font-size: 2.5rem;
+				}
+
+				.hero p {
+					font-size: 1.1rem;
+				}
+
+				.cta-buttons {
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.btn {
+					width: 200px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Hero Section -->
+		<section class="hero">
+			<h1>NetCoin (NTC)</h1>
+			<p>Decentralized network infrastructure powered by useful computation. Earn tokens by routing packets, not wasting energy on meaningless puzzles.</p>
+			<div class="cta-buttons">
+				<a href="#features" class="btn btn-primary">Learn More</a>
+				<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary">View on GitHub</a>
+			</div>
+		</section>
+
+		<!-- Features Section -->
+		<section id="features" class="section">
+			<h2>Why NetCoin?</h2>
+			<div class="features">
+				<div class="feature-card">
+					<div class="feature-icon">⚡</div>
+					<h3>Energy Efficient</h3>
+					<p>Proof of Network uses computational energy for useful routing work, not wasteful mining. Every watt serves the network.</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🌐</div>
+					<h3>Global Network</h3>
+					<p>Built on Mycelium's planetary-scale overlay network. Connect anywhere, route everywhere, earn everywhere.</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🔒</div>
+					<h3>Secure by Design</h3>
+					<p>51% attack resistance through energy barriers. No sensors to hack, no centralized points of failure.</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">💰</div>
+					<h3>Fair Economics</h3>
+					<p>Energy input = proportional rewards. Merit-based networking where contribution equals compensation.</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🏷️</div>
+					<h3>Premium Aliases</h3>
+					<p>Human-readable addresses paid in NTC. @yourname addresses become valuable network assets.</p>
+				</div>
+				<div class="feature-card">
+					<div class="feature-icon">🚀</div>
+					<h3>Multi-Platform</h3>
+					<p>Run nodes on any device - phones, laptops, servers. Contribute to the network from anywhere.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stats Section -->
+		<section class="section" style="background: #f8fafc;">
+			<h2>Network Statistics</h2>
+			<div class="stats">
+				<div>
+					<div class="stat-number">0</div>
+					<div>Active Nodes</div>
+				</div>
+				<div>
+					<div class="stat-number">0</div>
+					<div>NTC Mined</div>
+				</div>
+				<div>
+					<div class="stat-number">0</div>
+					<div>Routes Served</div>
+				</div>
+				<div>
+					<div class="stat-number">∞</div>
+					<div>Potential</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<p>&copy; 2024 NetCoin NTC. Licensed under Apache 2.0.</p>
+			<p>
+				<a href="https://netcoin-ntc.github.io/netcoin-docs">Documentation</a> |
+				<a href="https://github.com/netcoin-ntc">GitHub</a> |
+				<a href="https://github.com/netcoin-ntc/community">Community</a>
+			</p>
+		</footer>
+	</body>
+</html>

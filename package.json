@@ -1,0 +1,31 @@
+{
+  "name": "netcoin-website",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "NetCoin marketing website built with Astro",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && npx gh-pages -d dist",
+    "clean": "rm -rf dist node_modules/.astro",
+    "astro": "astro"
+  },
+  "keywords": ["netcoin", "blockchain", "cryptocurrency", "website", "astro"],
+  "author": "NetCoin Team",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/netcoin-ntc/netcoin-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/netcoin-ntc/netcoin-website/issues"
+  },
+  "homepage": "https://netcoin-ntc.github.io/netcoin-website",
+  "dependencies": {
+    "astro": "^5.16.6"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.0.0"
+  }
+}
