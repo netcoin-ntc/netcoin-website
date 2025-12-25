@@ -21,27 +21,41 @@ import Hero from '../components/Hero.astro';
 		<!-- About Section -->
 		<section id="about" class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">What is Netcoin?</h2>
-				<p style="font-size: 1.25rem; max-width: 600px; margin: 2rem auto;">
-					Netcoin transforms wasteful computation into planetary infrastructure.
-					Instead of mining meaningless hashes, nodes solve routing puzzles that optimize global internet paths.
+				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">What Netcoin Adds to PoW</h2>
+				<p style="font-size: 1.25rem; max-width: 700px; margin: 2rem auto;">
+					While Bitcoin's Proof of Work secures financial transactions, Netcoin extends this proven energy-backed consensus mechanism to secure and optimize network infrastructure.
+					The result is a planetary-scale internet that improves with every computational cycle.
 				</p>
 
-				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; margin-top: 4rem;">
+					<div class="feature-card">
+						<div class="feature-icon">🎯</div>
+						<h3>Network-Focused Consensus</h3>
+						<p>Unlike Bitcoin's financial security, Netcoin's PoW optimizes global routing paths, creating tangible infrastructure improvements.</p>
+					</div>
+					<div class="feature-card">
+						<div class="feature-icon">🌍</div>
+						<h3>Planetary-Scale Benefits</h3>
+						<p>Every solved puzzle contributes to better internet performance for everyone, creating positive network externalities.</p>
+					</div>
 					<div class="feature-card">
 						<div class="feature-icon">⚡</div>
-						<h3>Energy Efficient</h3>
-						<p>Every CPU cycle optimizes global network routing instead of generating heat.</p>
+						<h3>Energy as Infrastructure</h3>
+						<p>Computational energy that previously produced only heat now builds and maintains global network infrastructure.</p>
 					</div>
-					<div class="feature-card">
-						<div class="feature-icon">🌐</div>
-						<h3>Global Infrastructure</h3>
-						<p>Build planetary-scale internet infrastructure through decentralized computation.</p>
-					</div>
-					<div class="feature-card">
-						<div class="feature-icon">🔒</div>
-						<h3>Unbreakable Security</h3>
-						<p>Energy-backed consensus prevents 51% attacks through physics, not code.</p>
+				</div>
+
+				<div style="background: var(--gray-700); padding: 3rem; border-radius: 16px; margin-top: 4rem; border: 1px solid var(--gray-600);">
+					<h3 style="font-weight: 500; margin-bottom: 1.5rem; color: var(--light);">The Evolution: From Financial Security to Network Utility</h3>
+					<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+						<div>
+							<h4 style="color: var(--primary); margin-bottom: 1rem;">Bitcoin's PoW</h4>
+							<p style="font-size: 0.95rem; line-height: 1.6;">Secures monetary transactions through energy expenditure. Creates digital scarcity and trust in financial systems.</p>
+						</div>
+						<div>
+							<h4 style="color: var(--accent); margin-bottom: 1rem;">Netcoin's PoNW</h4>
+							<p style="font-size: 0.95rem; line-height: 1.6;">Secures network infrastructure through energy expenditure. Creates tangible improvements in global connectivity.</p>
+						</div>
 					</div>
 				</div>
 			</div>
