@@ -21,7 +21,7 @@ import Hero from '../components/Hero.astro';
 		<!-- About Section -->
 		<section id="about" class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2>What is Netcoin?</h2>
+				<h2 style="font-weight: 300;">What is Netcoin?</h2>
 				<p style="font-size: 1.25rem; max-width: 600px; margin: 2rem auto;">
 					Netcoin transforms wasteful computation into planetary infrastructure.
 					Instead of mining meaningless hashes, nodes solve routing puzzles that optimize global internet paths.
@@ -50,7 +50,7 @@ import Hero from '../components/Hero.astro';
 		<!-- How It Works Section -->
 		<section class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2>How It Works</h2>
+				<h2 style="font-weight: 300;">How It Works</h2>
 
 				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
 					<div class="feature-card">
@@ -459,13 +459,22 @@ blockquote::before {
   color: var(--light) !important;
 }
 
-/* Modern gradient text */
+/* Larger CTA buttons */
+.cta-section .btn {
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* Modern gradient text - disabled for readability */
+/*
 h2 {
   background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-700) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+*/
 
 /* Advanced hover effects */
 .feature-card {
