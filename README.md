@@ -6,7 +6,7 @@
 
 ## Overview
 
-This repository contains the official NetCoin marketing website, built with Astro for optimal performance and SEO. The site showcases NetCoin's value proposition, features, and community.
+This repository contains the official NetCoin marketing website, built with Astro for optimal performance and SEO. The site showcases NetCoin's value proposition, features, and community. 
 
 ## Tech Stack
 
