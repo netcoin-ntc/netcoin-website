@@ -167,6 +167,18 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateY(-2px);
 }
 
+.btn-tertiary {
+  background: var(--gray-800);
+  color: white;
+  border: 2px solid var(--gray-800);
+}
+
+.btn-tertiary:hover {
+  background: var(--gray-700);
+  border-color: var(--gray-700);
+  transform: translateY(-2px);
+}
+
 .section {
   padding: 100px 20px;
   max-width: 1200px;
@@ -295,8 +307,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  background: linear-gradient(135deg, var(--gray-900), var(--gray-800));
-  color: white;
+  background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
+  color: var(--gray-800);
   padding: 60px 20px;
   text-align: center;
   position: relative;
@@ -313,35 +325,35 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer a {
-  color: var(--accent);
+  color: var(--primary);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer a:hover {
-  color: var(--primary-light);
+  color: var(--primary-dark);
 }
 
-/* Footer buttons need special styling for dark background */
+/* Footer buttons need special styling for light background */
 .footer .btn-secondary {
-  background: rgba(255, 255, 255, 0.1) !important;
-  color: white !important;
-  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+  background: rgba(16, 185, 129, 0.1) !important; /* Pale green background */
+  color: var(--success) !important; /* Green text */
+  border: 2px solid rgba(16, 185, 129, 0.3) !important;
 }
 
 .footer .btn-secondary:hover {
-  background: rgba(255, 255, 255, 0.2) !important;
-  border-color: rgba(255, 255, 255, 0.5) !important;
-  color: white !important;
+  background: rgba(16, 185, 129, 0.2) !important;
+  border-color: rgba(16, 185, 129, 0.5) !important;
+  color: var(--success) !important;
 }
 
 .footer .btn-primary {
-  background: var(--primary) !important;
+  background: var(--gray-800) !important; /* Dark background */
   color: white !important;
 }
 
 .footer .btn-primary:hover {
-  background: var(--primary-light) !important;
+  background: var(--gray-700) !important;
   color: white !important;
 }
 
@@ -473,6 +485,18 @@ nav .btn-secondary:hover {
 
 .section:nth-child(even) {
   background: rgba(255, 255, 255, 0.9);
+}
+
+/* CTA section with consistent white background */
+.cta-section {
+  background: rgba(255, 255, 255, 0.95) !important;
+}
+
+.cta-section h2 {
+  background: none !important;
+  -webkit-background-clip: initial !important;
+  -webkit-text-fill-color: initial !important;
+  background-clip: initial !important;
 }
 
 /* Modern gradient text */
