@@ -21,7 +21,7 @@ import Hero from '../components/Hero.astro';
 		<!-- About Section -->
 		<section id="about" class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2 style="font-weight: 300;">What is Netcoin?</h2>
+				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">What is Netcoin?</h2>
 				<p style="font-size: 1.25rem; max-width: 600px; margin: 2rem auto;">
 					Netcoin transforms wasteful computation into planetary infrastructure.
 					Instead of mining meaningless hashes, nodes solve routing puzzles that optimize global internet paths.
@@ -50,7 +50,7 @@ import Hero from '../components/Hero.astro';
 		<!-- How It Works Section -->
 		<section class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2 style="font-weight: 300;">How It Works</h2>
+				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">How It Works</h2>
 
 				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
 					<div class="feature-card">
@@ -429,13 +429,15 @@ blockquote::before {
   height: 300px;
 }
 
-/* Modern text effects */
+/* Modern text effects - disabled for readability */
+/*
 .hero h1 {
   background: linear-gradient(135deg, #ffffff 0%, rgba(255,255,255,0.8) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
+*/
 
 /* Enhanced sections with dark theme */
 .section {
@@ -466,15 +468,7 @@ blockquote::before {
   font-weight: 600;
 }
 
-/* Modern gradient text - disabled for readability */
-/*
-h2 {
-  background: linear-gradient(135deg, var(--gray-900) 0%, var(--gray-700) 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-*/
+
 
 /* Advanced hover effects */
 .feature-card {
