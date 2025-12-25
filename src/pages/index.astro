@@ -194,84 +194,331 @@
 		</style>
 	</head>
 	<body>
+		<!-- Navigation -->
+		<nav style="position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+			<div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
+				<div style="display: flex; align-items: center; gap: 0.5rem;">
+					<img src="/logo.svg" alt="NetCoin" style="height: 32px; width: auto;">
+					<span style="font-weight: bold; font-size: 1.2rem; color: var(--primary);">NetCoin</span>
+				</div>
+				<div style="display: flex; gap: 2rem; align-items: center;">
+					<a href="#about" style="color: var(--dark); text-decoration: none; font-weight: 500;">About</a>
+					<a href="#technology" style="color: var(--dark); text-decoration: none; font-weight: 500;">Technology</a>
+					<a href="#benefits" style="color: var(--dark); text-decoration: none; font-weight: 500;">Benefits</a>
+					<a href="https://netcoin-ntc.github.io/netcoin-docs" style="color: var(--primary); text-decoration: none; font-weight: 500;">Docs</a>
+					<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">GitHub</a>
+				</div>
+			</div>
+		</nav>
+
 		<!-- Hero Section -->
 		<section class="hero">
-			<h1>NetCoin (NTC)</h1>
-			<p>Decentralized network infrastructure powered by useful computation. Earn tokens by routing packets, not wasting energy on meaningless puzzles.</p>
-			<div class="cta-buttons">
-				<a href="#features" class="btn btn-primary">Learn More</a>
-				<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary">View on GitHub</a>
+			<h1 style="margin-top: 2rem;">The Future of Decentralized Networking</h1>
+			<p style="max-width: 700px; font-size: 1.3rem; line-height: 1.6;">
+				NetCoin revolutionizes blockchain by making computational energy productive.
+				Instead of wasting electricity on meaningless puzzles, earn NTC tokens by powering global network infrastructure through useful routing work.
+			</p>
+			<div class="cta-buttons" style="margin-top: 2rem;">
+				<a href="#about" class="btn btn-primary">Discover NetCoin</a>
+				<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary">Explore Code</a>
 			</div>
 		</section>
 
-		<!-- Features Section -->
-		<section id="features" class="section">
-			<h2>Why NetCoin?</h2>
+		<!-- Problem Section -->
+		<section id="about" class="section" style="background: #f8fafc;">
+			<div style="max-width: 1200px; margin: 0 auto;">
+				<h2 style="text-align: center; margin-bottom: 3rem;">The Problem with Traditional Cryptocurrencies</h2>
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem; align-items: center;">
+					<div>
+						<h3 style="color: #dc2626; margin-bottom: 1rem;">⚡ Massive Energy Waste</h3>
+						<p style="font-size: 1.1rem; line-height: 1.6;">
+							Bitcoin and other PoW cryptocurrencies consume more electricity than entire countries.
+							Trillions of computational operations are performed daily for no practical benefit beyond maintaining the ledger.
+						</p>
+						<ul style="margin-top: 1rem; padding-left: 1.5rem;">
+							<li>Bitcoin: ~150 TWh/year (more than Argentina)</li>
+							<li>Ethereum: ~50 TWh/year during PoW phase</li>
+							<li>Zero tangible benefit to society</li>
+						</ul>
+					</div>
+					<div>
+						<h3 style="color: #dc2626; margin-bottom: 1rem;">🌐 No Real-World Utility</h3>
+						<p style="font-size: 1.1rem; line-height: 1.6;">
+							Traditional blockchains are financial databases with no connection to physical infrastructure.
+							They don't solve real networking problems or provide tangible value beyond speculation.
+						</p>
+						<ul style="margin-top: 1rem; padding-left: 1.5rem;">
+							<li>Financial speculation only</li>
+							<li>No improvement to internet infrastructure</li>
+							<li>Environmental harm without benefit</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Solution Section -->
+		<section class="section">
+			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
+				<h2>NetCoin: A Revolutionary Solution</h2>
+				<p style="font-size: 1.2rem; margin-bottom: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+					NetCoin implements <strong>Proof of Network (PoNW)</strong> - a consensus mechanism that transforms wasteful computation into productive network infrastructure.
+				</p>
+
+				<div style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 3rem; border-radius: 16px; margin-bottom: 3rem;">
+					<h3 style="font-size: 2rem; margin-bottom: 1rem;">🔄 Proof of Network (PoNW)</h3>
+					<p style="font-size: 1.1rem; line-height: 1.6; max-width: 600px; margin: 0 auto;">
+						Instead of mining meaningless hashes, NetCoin nodes solve routing puzzles that optimize global network paths.
+						Every computational cycle contributes to planetary-scale internet infrastructure.
+					</p>
+				</div>
+
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+					<div style="text-align: left;">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">Traditional PoW</h4>
+						<ul style="text-align: left;">
+							<li>❌ Wasteful SHA-256 hashing</li>
+							<li>❌ No practical benefit</li>
+							<li>❌ Environmental damage</li>
+							<li>❌ ASIC mining farms</li>
+						</ul>
+					</div>
+					<div style="text-align: left;">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">NetCoin PoNW</h4>
+						<ul style="text-align: left;">
+							<li>✅ Useful routing optimization</li>
+							<li>✅ Global network improvement</li>
+							<li>✅ Environmental benefit</li>
+							<li>✅ Any device can participate</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Technology Section -->
+		<section id="technology" class="section" style="background: #f8fafc;">
+			<div style="max-width: 1200px; margin: 0 auto;">
+				<h2 style="text-align: center; margin-bottom: 3rem;">How NetCoin Works</h2>
+
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 3rem;">
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h3 style="color: var(--primary); margin-bottom: 1rem;">1. Mycelium Foundation</h3>
+						<p>Built on <strong>Mycelium</strong> - a decentralized IPv6 overlay network that provides censorship-resistant, planetary-scale communication infrastructure.</p>
+						<ul style="margin-top: 1rem;">
+							<li>Zero-trust networking</li>
+							<li>Cryptography-based routing</li>
+							<li>Global peer-to-peer connectivity</li>
+						</ul>
+					</div>
+
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h3 style="color: var(--primary); margin-bottom: 1rem;">2. Routing Puzzles</h3>
+						<p>Network nodes compete to solve routing optimization puzzles. Winners earn NTC tokens and contribute to global internet efficiency.</p>
+						<ul style="margin-top: 1rem;">
+							<li>Path-finding algorithms</li>
+							<li>Latency optimization</li>
+							<li>Energy-proportional rewards</li>
+						</ul>
+					</div>
+
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h3 style="color: var(--primary); margin-bottom: 1rem;">3. NTC Token Economy</h3>
+						<p>NTC tokens represent verified computational energy and power premium network services, creating sustainable economic incentives.</p>
+						<ul style="margin-top: 1rem;">
+							<li>Energy-backed value</li>
+							<li>Premium service payments</li>
+							<li>Governance participation</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Benefits Section -->
+		<section id="benefits" class="section">
+			<h2 style="text-align: center; margin-bottom: 3rem;">NetCoin Benefits</h2>
 			<div class="features">
 				<div class="feature-card">
 					<div class="feature-icon">⚡</div>
 					<h3>Energy Efficient</h3>
-					<p>Proof of Network uses computational energy for useful routing work, not wasteful mining. Every watt serves the network.</p>
+					<p>Every watt of computation serves a useful purpose - optimizing global network routing instead of meaningless number crunching.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon">🌐</div>
-					<h3>Global Network</h3>
-					<p>Built on Mycelium's planetary-scale overlay network. Connect anywhere, route everywhere, earn everywhere.</p>
+					<h3>Global Infrastructure</h3>
+					<p>Participate in building planetary-scale internet infrastructure. Your device contributes to a better, more efficient global network.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon">🔒</div>
-					<h3>Secure by Design</h3>
-					<p>51% attack resistance through energy barriers. No sensors to hack, no centralized points of failure.</p>
+					<h3>Unbreakable Security</h3>
+					<p>Energy barriers prevent 51% attacks. No external sensors to hack - security is embedded in the physics of computation itself.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon">💰</div>
-					<h3>Fair Economics</h3>
-					<p>Energy input = proportional rewards. Merit-based networking where contribution equals compensation.</p>
+					<h3>Fair & Inclusive</h3>
+					<p>Any device can participate. Energy expenditure equals rewards. No mining farms or specialized hardware required.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon">🏷️</div>
-					<h3>Premium Aliases</h3>
-					<p>Human-readable addresses paid in NTC. @yourname addresses become valuable network assets.</p>
+					<h3>Premium Features</h3>
+					<p>Earn NTC to access QoS routing, VPN tunnels, bandwidth boosts, and secure channels. Premium aliases become valuable assets.</p>
 				</div>
 				<div class="feature-card">
 					<div class="feature-icon">🚀</div>
-					<h3>Multi-Platform</h3>
-					<p>Run nodes on any device - phones, laptops, servers. Contribute to the network from anywhere.</p>
+					<h3>Future-Proof</h3>
+					<p>As the internet grows, NetCoin's value grows. Network optimization becomes increasingly valuable as global connectivity expands.</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Use Cases Section -->
+		<section class="section" style="background: #f8fafc;">
+			<div style="max-width: 1200px; margin: 0 auto;">
+				<h2 style="text-align: center; margin-bottom: 3rem;">Real-World Applications</h2>
+
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">🌍 Global Connectivity</h4>
+						<p>Provide internet access to remote areas through decentralized routing infrastructure.</p>
+					</div>
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">🔒 Privacy Networks</h4>
+						<p>Censorship-resistant communication channels for journalists, activists, and privacy-conscious users.</p>
+					</div>
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">⚡ Enterprise Solutions</h4>
+						<p>Dedicated network infrastructure for businesses requiring guaranteed performance and security.</p>
+					</div>
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">📱 IoT Networks</h4>
+						<p>Energy-efficient routing for Internet of Things devices in smart cities and industrial applications.</p>
+					</div>
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">🎮 Gaming Infrastructure</h4>
+						<p>Low-latency gaming networks with global coverage and premium routing for competitive gaming.</p>
+					</div>
+					<div style="background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+						<h4 style="color: var(--primary); margin-bottom: 1rem;">🛰️ Space Communications</h4>
+						<p>Interplanetary networking infrastructure for satellite constellations and space-based communications.</p>
+					</div>
 				</div>
 			</div>
 		</section>
 
 		<!-- Stats Section -->
-		<section class="section" style="background: #f8fafc;">
-			<h2>Network Statistics</h2>
+		<section class="section">
+			<h2 style="text-align: center; margin-bottom: 3rem;">Network Impact</h2>
 			<div class="stats">
 				<div>
 					<div class="stat-number">0</div>
 					<div>Active Nodes</div>
+					<small style="color: #64748b;">Growing network</small>
 				</div>
 				<div>
 					<div class="stat-number">0</div>
-					<div>NTC Mined</div>
+					<div>NTC Tokens</div>
+					<small style="color: #64748b;">Energy verified</small>
 				</div>
 				<div>
 					<div class="stat-number">0</div>
-					<div>Routes Served</div>
+					<div>Routes Optimized</div>
+					<small style="color: #64748b;">Network efficiency</small>
 				</div>
 				<div>
 					<div class="stat-number">∞</div>
-					<div>Potential</div>
+					<div>Potential Impact</div>
+					<small style="color: #64748b;">Global scale</small>
+				</div>
+			</div>
+		</section>
+
+		<!-- Roadmap Section -->
+		<section class="section" style="background: #f8fafc;">
+			<div style="max-width: 1200px; margin: 0 auto;">
+				<h2 style="text-align: center; margin-bottom: 3rem;">Development Roadmap</h2>
+
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
+					<div style="text-align: center;">
+						<div style="background: var(--primary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">1</div>
+						<h4>Phase 1: Foundation</h4>
+						<p>✅ Core blockchain with PoNW consensus</p>
+						<p>🔄 CLI wallet and basic networking</p>
+						<small style="color: #64748b;">Current: 25% complete</small>
+					</div>
+					<div style="text-align: center;">
+						<div style="background: var(--secondary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">2</div>
+						<h4>Phase 2: P2P Network</h4>
+						<p>📋 Multi-node consensus</p>
+						<p>📋 Block propagation</p>
+						<small style="color: #64748b;">Next: 6 weeks</small>
+					</div>
+					<div style="text-align: center;">
+						<div style="background: var(--secondary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">3</div>
+						<h4>Phase 3: Ecosystem</h4>
+						<p>📋 Web wallet & explorer</p>
+						<p>📋 Mobile applications</p>
+						<small style="color: #64748b;">Q1 2025</small>
+					</div>
+					<div style="text-align: center;">
+						<div style="background: var(--secondary); color: white; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 1rem; font-weight: bold;">4</div>
+						<h4>Phase 4: Launch</h4>
+						<p>📋 Mainnet deployment</p>
+						<p>📋 Global scaling</p>
+						<small style="color: #64748b;">Q2 2025</small>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CTA Section -->
+		<section class="section">
+			<div style="max-width: 800px; margin: 0 auto; text-align: center;">
+				<h2>Join the NetCoin Revolution</h2>
+				<p style="font-size: 1.1rem; margin-bottom: 2rem;">
+					Be part of building the future of decentralized networking.
+					Contribute to a more efficient, secure, and accessible internet for everyone.
+				</p>
+				<div class="cta-buttons">
+					<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-primary">Get Started</a>
+					<a href="https://netcoin-ntc.github.io/netcoin-docs" class="btn btn-secondary">Read Documentation</a>
 				</div>
 			</div>
 		</section>
 
 		<!-- Footer -->
 		<footer class="footer">
-			<p>&copy; 2024 NetCoin NTC. Licensed under Apache 2.0.</p>
-			<p>
-				<a href="https://netcoin-ntc.github.io/netcoin-docs">Documentation</a> |
-				<a href="https://github.com/netcoin-ntc">GitHub</a> |
-				<a href="https://github.com/netcoin-ntc/community">Community</a>
-			</p>
+			<div style="max-width: 1200px; margin: 0 auto;">
+				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-bottom: 2rem;">
+					<div>
+						<h4 style="color: white; margin-bottom: 1rem;">NetCoin</h4>
+						<p>Revolutionizing blockchain by making computational energy productive through useful network infrastructure.</p>
+					</div>
+					<div>
+						<h4 style="color: white; margin-bottom: 1rem;">Resources</h4>
+						<ul style="list-style: none; padding: 0;">
+							<li><a href="https://netcoin-ntc.github.io/netcoin-docs" style="color: var(--accent);">Documentation</a></li>
+							<li><a href="https://github.com/netcoin-ntc/netcoin" style="color: var(--accent);">GitHub</a></li>
+							<li><a href="https://github.com/netcoin-ntc/community" style="color: var(--accent);">Community</a></li>
+						</ul>
+					</div>
+					<div>
+						<h4 style="color: white; margin-bottom: 1rem;">Technology</h4>
+						<ul style="list-style: none; padding: 0;">
+							<li><a href="#technology" style="color: var(--accent);">Proof of Network</a></li>
+							<li><a href="#benefits" style="color: var(--accent);">Mycelium Integration</a></li>
+							<li><a href="#about" style="color: var(--accent);">Energy Verification</a></li>
+						</ul>
+					</div>
+				</div>
+				<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem; text-align: center;">
+					<p>&copy; 2024 NetCoin NTC. Licensed under Apache 2.0.</p>
+					<p style="margin-top: 0.5rem;">
+						Built with ❤️ for a better internet |
+						<a href="https://github.com/netcoin-ntc/netcoin-website" style="color: var(--accent);">View Source</a>
+					</p>
+				</div>
+			</div>
 		</footer>
 	</body>
 </html>
