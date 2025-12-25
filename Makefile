@@ -35,7 +35,7 @@ build:
 	npm run build
 
 # Preview production build
-preview:
+preview: build
 	@echo "👀 Previewing production build..."
 	npm run preview
 
