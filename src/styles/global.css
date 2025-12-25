@@ -38,13 +38,13 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: var(--gray-800);
+  color: var(--gray-100);
   background: linear-gradient(135deg,
-    rgba(6, 182, 212, 0.03) 0%,
-    rgba(139, 92, 246, 0.02) 25%,
-    rgba(249, 115, 22, 0.01) 50%,
-    rgba(16, 185, 129, 0.02) 75%,
-    var(--gray-50) 100%);
+    #0c4a6e 0%,    /* Dark blue */
+    #164e63 25%,   /* Dark cyan */
+    #0f766e 50%,   /* Dark teal */
+    #065f46 75%,   /* Dark emerald */
+    #1e293b 100%); /* Dark slate */
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -173,12 +173,27 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
 }
 
-.section h2 {
-  font-size: 3rem;
-  text-align: center;
-  margin-bottom: 4rem;
+.section {
+  color: var(--gray-800);
+}
+
+.section h1,
+.section h2,
+.section h3,
+.section h4,
+.section h5,
+.section h6 {
   color: var(--gray-900);
-  font-weight: 700;
+}
+
+.section p,
+.section li,
+.section blockquote {
+  color: var(--gray-700);
+}
+
+.section blockquote {
+  color: var(--gray-600);
 }
 
 .features {
@@ -307,6 +322,29 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--primary-light);
 }
 
+/* Footer buttons need special styling for dark background */
+.footer .btn-secondary {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: white !important;
+  border: 2px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.footer .btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+  color: white !important;
+}
+
+.footer .btn-primary {
+  background: var(--primary) !important;
+  color: white !important;
+}
+
+.footer .btn-primary:hover {
+  background: var(--primary-light) !important;
+  color: white !important;
+}
+
 /* Enhanced typography */
 blockquote {
   font-style: italic;
@@ -351,14 +389,15 @@ nav a:hover {
 }
 
 nav .btn-secondary {
-  color: var(--primary);
-  border-color: var(--primary);
-  background: rgba(6, 182, 212, 0.1);
+  color: var(--gray-700) !important;
+  border-color: var(--primary) !important;
+  background: rgba(255, 255, 255, 0.9) !important;
 }
 
 nav .btn-secondary:hover {
-  background: var(--primary);
-  color: white;
+  background: var(--primary) !important;
+  color: white !important;
+  border-color: var(--primary) !important;
 }
 
 /* Better spacing and rhythm */
@@ -420,13 +459,20 @@ nav .btn-secondary:hover {
   background-clip: text;
 }
 
-/* Glassmorphism sections */
+/* Enhanced sections with dark theme */
 .section {
   position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 24px;
+  margin: 50px auto;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .section:nth-child(even) {
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.02) 0%, rgba(139, 92, 246, 0.02) 100%);
+  background: rgba(255, 255, 255, 0.9);
 }
 
 /* Modern gradient text */
