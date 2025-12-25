@@ -1,28 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+/* Basic test CSS */
+body {
+  background: linear-gradient(135deg, #0c4a6e 0%, #164e63 25%, #0f766e 50%, #065f46 75%, #1e293b 100%);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+}
 
-:root {
-  --primary: #06b6d4;    /* Modern Cyan */
-  --primary-light: #22d3ee;
-  --primary-dark: #0891b2;
-  --secondary: #8b5cf6;  /* Modern Purple */
-  --secondary-light: #a78bfa;
-  --accent: #f97316;     /* Modern Orange */
-  --accent-light: #fb923c;
-  --success: #10b981;   /* Emerald */
-  --warning: #f59e0b;   /* Amber */
-  --danger: #ef4444;    /* Red */
-  --dark: #0f172a;      /* Modern Dark */
-  --light: #fafafa;     /* Ultra Light */
-  --gray-50: #fafafa;
-  --gray-100: #f4f4f5;
-  --gray-200: #e4e4e7;
-  --gray-300: #d4d4d8;
-  --gray-600: #52525b;
-  --gray-700: #3f3f46;
-  --gray-800: #27272a;
-  --gray-900: #18181b;
-  --glass: rgba(255, 255, 255, 0.1);
-  --glass-border: rgba(255, 255, 255, 0.2);
+.hero {
+  background: linear-gradient(135deg, #06b6d4 0%, #8b5cf6 50%, #22d3ee 100%);
+  color: white;
+  padding: 120px 20px 100px;
+  text-align: center;
+  min-height: 90vh;
+}
+
+.section {
+  padding: 100px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  margin-bottom: 50px;
+  color: #1e293b;
+}
+
+.btn {
+  background: #27272a;
+  color: white;
+  padding: 16px 32px;
+  border-radius: 12px;
+  text-decoration: none;
+  border: 2px solid #27272a;
+}
+
+.btn:hover {
+  background: #3f3f46;
+  border-color: #3f3f46;
 }
 
 * {
