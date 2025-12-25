@@ -1,47 +1,22 @@
 ---
 import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
 ---
 
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/x-icon" href="/netcoin-website/favicon.ico" />
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>NetCoin (NTC) - Decentralized Network with Energy-Backed Consensus</title>
 		<meta name="description" content="NetCoin implements Proof of Network (PoNW) consensus, embedding brute-force puzzles directly into Mycelium routing decisions. Earn NTC by contributing to global network infrastructure." />
 	</head>
 	<body>
-		<!-- Navigation -->
-		<nav style="position: fixed; top: 0; width: 100%; background: rgba(255,255,255,0.95); backdrop-filter: blur(10px); z-index: 1000; padding: 1rem 2rem; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
-			<div style="max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;">
-				<div style="display: flex; align-items: center; gap: 0.5rem;">
-					<img src="/netcoin-website/logo.svg" alt="NetCoin" style="height: 32px; width: auto;">
-					<span style="font-weight: bold; font-size: 1.2rem; color: var(--primary);">NetCoin</span>
-				</div>
-				<div style="display: flex; gap: 2rem; align-items: center;">
-					<a href="#about" style="color: var(--dark); text-decoration: none; font-weight: 500;">About</a>
-					<a href="#technology" style="color: var(--dark); text-decoration: none; font-weight: 500;">Technology</a>
-					<a href="#benefits" style="color: var(--dark); text-decoration: none; font-weight: 500;">Benefits</a>
-					<a href="https://netcoin-ntc.github.io/netcoin-docs" style="color: var(--primary); text-decoration: none; font-weight: 500;">Docs</a>
-					<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.9rem;">GitHub</a>
-				</div>
-			</div>
-		</nav>
+		<Header />
 
-		<!-- Hero Section -->
-		<section class="hero">
-			<h1 style="margin-top: 2rem;">The Future of Decentralized Networking</h1>
-			<p style="max-width: 700px; font-size: 1.3rem; line-height: 1.6;">
-				Building on Bitcoin's revolutionary Proof of Work and Jason Lowery's Softwar vision,
-				NetCoin extends these groundbreaking concepts into the realm of global network infrastructure.
-				Earn NTC tokens by contributing to planetary-scale internet routing through useful computational work.
-			</p>
-			<div class="cta-buttons" style="margin-top: 2rem;">
-				<a href="#about" class="btn btn-primary">Discover NetCoin</a>
-				<a href="https://github.com/netcoin-ntc/netcoin" class="btn btn-secondary">Explore Code</a>
-			</div>
-		</section>
+		<Hero />
 
 		<!-- Inspiration Section -->
 		<section id="about" class="section" style="background: #f8fafc;">
@@ -360,13 +335,13 @@ import '../styles/global.css';
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root {
-  --primary: #06b6d4;    /* Modern Cyan */
-  --primary-light: #22d3ee;
-  --primary-dark: #0891b2;
-  --secondary: #8b5cf6;  /* Modern Purple */
+  --primary: #0ea5e9;    /* Professional blue - represents data flow */
+  --primary-light: #38bdf8;
+  --primary-dark: #0284c7;
+  --secondary: #7c3aed;  /* Professional purple - represents network nodes */
   --secondary-light: #a78bfa;
-  --accent: #f97316;     /* Modern Orange */
-  --accent-light: #fb923c;
+  --accent: #059669;     /* Professional green - represents computational energy */
+  --accent-light: #10b981;
   --success: #10b981;   /* Emerald */
   --warning: #f59e0b;   /* Amber */
   --danger: #ef4444;    /* Red */
@@ -397,13 +372,13 @@ html {
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   line-height: 1.6;
-  color: var(--gray-100);
+  color: var(--gray-900);
   background: linear-gradient(135deg,
-    #0c4a6e 0%,    /* Dark blue */
-    #164e63 25%,   /* Dark cyan */
-    #0f766e 50%,   /* Dark teal */
-    #065f46 75%,   /* Dark emerald */
-    #1e293b 100%); /* Dark slate */
+    #f8fafc 0%,    /* Light gray */
+    #f1f5f9 25%,   /* Light blue-gray */
+    #e2e8f0 50%,   /* Medium blue-gray */
+    #cbd5e1 75%,   /* Medium gray */
+    #94a3b8 100%); /* Slate */
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -415,128 +390,7 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--gray-900);
 }
 
-.hero {
-  background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 50%, var(--primary-light) 100%);
-  color: white;
-  padding: 120px 20px 100px;
-  text-align: center;
-  min-height: 90vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  overflow: hidden;
-}
 
-.hero::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
-  animation: float 20s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-}
-
-.hero h1 {
-  font-size: 4rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-  text-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  position: relative;
-  z-index: 2;
-}
-
-.hero p {
-  font-size: 1.4rem;
-  margin-bottom: 3rem;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  opacity: 0.95;
-  font-weight: 400;
-  line-height: 1.7;
-  position: relative;
-  z-index: 2;
-}
-
-.cta-buttons {
-  display: flex;
-  gap: 1.5rem;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: relative;
-  z-index: 2;
-}
-
-.btn {
-  padding: 16px 32px;
-  border-radius: 12px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  display: inline-block;
-  position: relative;
-  overflow: hidden;
-}
-
-.btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -100%;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-  transition: left 0.5s;
-}
-
-.btn:hover::before {
-  left: 100%;
-}
-
-.btn-primary {
-  background: linear-gradient(135deg, var(--accent), #d97706);
-  color: white;
-  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.3);
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 12px 35px rgba(245, 158, 11, 0.4);
-}
-
-.btn-secondary {
-  background: rgba(255,255,255,0.15);
-  color: white;
-  border: 2px solid rgba(255,255,255,0.3);
-  backdrop-filter: blur(10px);
-}
-
-.btn-secondary:hover {
-  background: rgba(255,255,255,0.25);
-  border-color: rgba(255,255,255,0.5);
-  transform: translateY(-2px);
-}
-
-.btn-tertiary {
-  background: var(--gray-800);
-  color: white;
-  border: 2px solid var(--gray-800);
-}
-
-.btn-tertiary:hover {
-  background: var(--gray-700);
-  border-color: var(--gray-700);
-  transform: translateY(-2px);
-}
 
 .section {
   padding: 100px 20px;
@@ -736,40 +590,7 @@ blockquote::before {
   font-family: Georgia, serif;
 }
 
-/* Modern navigation with glassmorphism */
-nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  z-index: 1000;
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
 
-nav a {
-  color: var(--gray-700) !important;
-  font-weight: 500;
-}
-
-nav a:hover {
-  color: var(--primary) !important;
-}
-
-nav .btn-secondary {
-  color: var(--gray-700) !important;
-  border-color: var(--primary) !important;
-  background: rgba(255, 255, 255, 0.9) !important;
-}
-
-nav .btn-secondary:hover {
-  background: var(--primary) !important;
-  color: white !important;
-  border-color: var(--primary) !important;
-}
 
 /* Better spacing and rhythm */
 .section > * + * {
