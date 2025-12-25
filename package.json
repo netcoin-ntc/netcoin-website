@@ -2,7 +2,7 @@
   "name": "netcoin-website",
   "type": "module",
   "version": "0.1.0",
-  "description": "NetCoin marketing website built with Astro",
+  "description": "Netcoin marketing website built with Astro",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
@@ -12,7 +12,7 @@
     "astro": "astro"
   },
   "keywords": ["netcoin", "blockchain", "cryptocurrency", "website", "astro"],
-  "author": "NetCoin Team",
+  "author": "Netcoin Team",
   "license": "Apache-2.0",
   "repository": {
     "type": "git",

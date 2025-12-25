@@ -1,11 +1,11 @@
-# NetCoin Website Makefile
+# Netcoin Website Makefile
 # Local development and deployment commands
 
 .PHONY: help dev build preview deploy clean install lint format
 
 # Default target
 help:
-	@echo "NetCoin Website Development Commands:"
+	@echo "Netcoin Website Development Commands:"
 	@echo ""
 	@echo "Development:"
 	@echo "  make dev        - Start development server"

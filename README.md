@@ -1,19 +1,19 @@
-# NetCoin Website
+# Netcoin Website
 
-**Beautiful marketing website for NetCoin built with Astro**
+**Beautiful marketing website for Netcoin built with Astro**
 
 🌐 **[View Live Site](https://netcoin-ntc.github.io/netcoin-website)**
 
 ## Overview
 
-This repository contains the official NetCoin marketing website, built with Astro for optimal performance and SEO. The site showcases NetCoin's value proposition, features, and community. 
+This repository contains the official Netcoin marketing website, built with Astro for optimal performance and SEO. The site showcases Netcoin's value proposition, features, and community. 
 
 ## Tech Stack
 
 - **Framework**: [Astro](https://astro.build) - Static site generator
 - **Styling**: Pure CSS with modern design system
 - **Deployment**: GitHub Pages via GitHub Actions
-- **Branding**: NetCoin logo and favicon integration
+- **Branding**: Netcoin logo and favicon integration
 
 ## Project Structure
 
@@ -21,7 +21,7 @@ This repository contains the official NetCoin marketing website, built with Astr
 netcoin-website/
 ├── public/
 │   ├── favicon.ico         # Favicon for browser tabs
-│   └── logo.svg           # NetCoin logo
+│   └── logo.svg           # Netcoin logo
 ├── src/
 │   └── pages/
 │       └── index.astro   # Main landing page
@@ -72,7 +72,7 @@ netcoin-website/
 The website content is managed in `src/pages/index.astro`. Key sections include:
 
 - **Hero Section**: Main value proposition and CTAs
-- **Features**: Six key NetCoin benefits
+- **Features**: Six key Netcoin benefits
 - **Statistics**: Network metrics (to be connected to live data)
 - **Footer**: Links to docs, GitHub, and community
 
@@ -174,8 +174,8 @@ This builds the site and pushes to the `gh-pages` branch.
 
 - **Issues**: Report bugs in this repository
 - **Technical**: Check Astro documentation
-- **Design**: Follow NetCoin brand guidelines
+- **Design**: Follow Netcoin brand guidelines
 
 ---
 
-**This website serves as the primary marketing and community hub for NetCoin. Keep it updated with fresh content and engaging design!** 🚀
+**This website serves as the primary marketing and community hub for Netcoin. Keep it updated with fresh content and engaging design!** 🚀
