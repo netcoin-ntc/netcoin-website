@@ -296,11 +296,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer {
-  background: linear-gradient(135deg, var(--gray-100), var(--gray-200));
-  color: var(--gray-800);
+  background: var(--gray-800);
+  color: var(--gray-300);
   padding: 60px 20px;
   text-align: center;
   position: relative;
+  border-top: 1px solid var(--gray-700);
 }
 
 .footer::before {
@@ -320,29 +321,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .footer a:hover {
-  color: var(--primary-dark);
+  color: var(--primary-light);
 }
 
-/* Footer buttons need special styling for light background */
+.footer h4 {
+  color: var(--light);
+  margin-bottom: 1rem;
+}
+
+.footer p {
+  color: var(--gray-400);
+}
+
+/* Footer buttons with dark theme */
 .footer .btn-secondary {
-  background: rgba(16, 185, 129, 0.1) !important; /* Pale green background */
-  color: var(--success) !important; /* Green text */
-  border: 2px solid rgba(16, 185, 129, 0.3) !important;
+  background: var(--gray-700) !important;
+  color: var(--gray-300) !important;
+  border: 2px solid var(--gray-600) !important;
 }
 
 .footer .btn-secondary:hover {
-  background: rgba(16, 185, 129, 0.2) !important;
-  border-color: rgba(16, 185, 129, 0.5) !important;
-  color: var(--success) !important;
+  background: var(--gray-600) !important;
+  border-color: var(--primary) !important;
+  color: var(--light) !important;
 }
 
 .footer .btn-primary {
-  background: var(--gray-800) !important; /* Dark background */
+  background: var(--primary) !important;
   color: white !important;
 }
 
 .footer .btn-primary:hover {
-  background: var(--gray-700) !important;
+  background: var(--primary-dark) !important;
   color: white !important;
 }
 
@@ -430,29 +440,23 @@ blockquote::before {
 /* Enhanced sections with dark theme */
 .section {
   position: relative;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: var(--gray-800);
   border-radius: 24px;
   margin: 50px auto;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid var(--gray-700);
 }
 
 .section:nth-child(even) {
-  background: rgba(255, 255, 255, 0.9);
+  background: var(--gray-800);
 }
 
-/* CTA section with consistent white background */
+/* CTA section with consistent dark background */
 .cta-section {
-  background: rgba(255, 255, 255, 0.95) !important;
+  background: var(--gray-800) !important;
 }
 
 .cta-section h2 {
-  background: none !important;
-  -webkit-background-clip: initial !important;
-  -webkit-text-fill-color: initial !important;
-  background-clip: initial !important;
+  color: var(--light) !important;
 }
 
 /* Modern gradient text */
