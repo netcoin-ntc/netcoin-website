@@ -23,7 +23,7 @@ import Hero from '../components/Hero.astro';
 		<!-- About Section -->
 		<section id="about" class="section">
 			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">Why Netcoin vs Bitcoin/Monero</h2>
+				<h2 style="font-weight: 300; color: #ffffff !important; background: none !important; -webkit-background-clip: initial !important; -webkit-text-fill-color: initial !important; background-clip: initial !important;">Why Netcoin</h2>
 				<p style="font-size: 1.25rem; max-width: 700px; margin: 2rem auto;">
 					Netcoin solves the fundamental problems of cryptocurrency: privacy that actually works, fairness that eliminates first-mover advantages, and security that scales globally.
 				</p>
@@ -32,7 +32,7 @@ import Hero from '../components/Hero.astro';
 					<div class="feature-card">
 						<div class="feature-icon">🔐</div>
 						<h3>Military-Grade Privacy</h3>
-						<p>ElGamal cryptography provides <1% deanonymization rate vs Monero's 35%. Complete transaction opacity with metadata protection.</p>
+						<p>ElGamal cryptography provides less than 1% deanonymization rate vs Monero's 35%. Complete transaction opacity with metadata protection.</p>
 					</div>
 					<div class="feature-card">
 						<div class="feature-icon">⚖️</div>
@@ -55,7 +55,7 @@ import Hero from '../components/Hero.astro';
 						</div>
 						<div>
 							<h4 style="color: #10b981; margin-bottom: 1rem;">Netcoin's Superiority</h4>
-							<p style="font-size: 0.95rem; line-height: 1.6;">ElGamal encryption + MLSAG provides <1% deanonymization rate. Forward secrecy and quantum resistance protect against future attacks.</p>
+							<p style="font-size: 0.95rem; line-height: 1.6;">ElGamal encryption + MLSAG provides less than 1% deanonymization rate. Forward secrecy and quantum resistance protect against future attacks.</p>
 						</div>
 					</div>
 				</div>
@@ -181,7 +181,7 @@ import Hero from '../components/Hero.astro';
 				<div style="background: var(--gray-700); padding: 3rem; border-radius: 16px; border: 1px solid var(--gray-600);">
 					<h3 style="font-weight: 500; margin-bottom: 2rem; color: var(--light);">Netcoin's Superior Protections</h3>
 					<p style="font-size: 1.1rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-						Netcoin addresses every Monero vulnerability with advanced cryptographic design, achieving <1% deanonymization rates.
+						Netcoin addresses every Monero vulnerability with advanced cryptographic design, achieving less than 1% deanonymization rates.
 					</p>
 
 					<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: left;">
@@ -219,7 +219,7 @@ import Hero from '../components/Hero.astro';
 						<div style="margin-top: 1rem; font-size: 0.9rem; color: var(--gray-400);">
 							<strong>Bitcoin:</strong> $5 fee, 60min wait, traceable<br>
 							<strong>Monero:</strong> $0.01 fee, 2min wait, 35% traceable<br>
-							<strong>Netcoin:</strong> $0.001 fee, 10min wait, <1% traceable
+							<strong>Netcoin:</strong> $0.001 fee, 10min wait, less than 1% traceable
 						</div>
 					</div>
 
@@ -283,63 +283,6 @@ import Hero from '../components/Hero.astro';
 			</div>
 		</section>
 
-		<!-- Roadmap Preview Section -->
-		<section class="section">
-			<div style="max-width: 1200px; margin: 0 auto; text-align: center;">
-				<h2 style="font-weight: 300; color: #ffffff !important; margin-bottom: 3rem;">Development Roadmap</h2>
-
-				<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; margin-bottom: 3rem;">
-					<div style="background: var(--gray-700); padding: 2rem; border-radius: 16px; border: 1px solid var(--gray-600);">
-						<h3 style="color: var(--accent); margin-bottom: 1rem;">Q1 2025</h3>
-						<h4 style="color: var(--light); margin-bottom: 1rem;">Cryptographic Foundations</h4>
-						<ul style="text-align: left; list-style: none; padding: 0; color: var(--gray-300);">
-							<li style="margin-bottom: 0.5rem;">✅ ElGamal encryption implementation</li>
-							<li style="margin-bottom: 0.5rem;">✅ MLSAG ring signatures</li>
-							<li style="margin-bottom: 0.5rem;">🔄 RandomX mining integration</li>
-							<li style="margin-bottom: 0.5rem;">📅 Confidential transactions</li>
-						</ul>
-					</div>
-
-					<div style="background: var(--gray-700); padding: 2rem; border-radius: 16px; border: 1px solid var(--gray-600);">
-						<h3 style="color: var(--primary); margin-bottom: 1rem;">Q2 2025</h3>
-						<h4 style="color: var(--light); margin-bottom: 1rem;">Network & Wallets</h4>
-						<ul style="text-align: left; list-style: none; padding: 0; color: var(--gray-300);">
-							<li style="margin-bottom: 0.5rem;">📅 P2P network protocol</li>
-							<li style="margin-bottom: 0.5rem;">📅 Stealth address wallets</li>
-							<li style="margin-bottom: 0.5rem;">📅 Light client support</li>
-							<li style="margin-bottom: 0.5rem;">📅 @alias system</li>
-						</ul>
-					</div>
-
-					<div style="background: var(--gray-700); padding: 2rem; border-radius: 16px; border: 1px solid var(--gray-600);">
-						<h3 style="color: var(--secondary); margin-bottom: 1rem;">Q3 2025</h3>
-						<h4 style="color: var(--light); margin-bottom: 1rem;">Testing & Audit</h4>
-						<ul style="text-align: left; list-style: none; padding: 0; color: var(--gray-300);">
-							<li style="margin-bottom: 0.5rem;">📅 Security audit (privacy)</li>
-							<li style="margin-bottom: 0.5rem;">📅 Performance benchmarking</li>
-							<li style="margin-bottom: 0.5rem;">📅 Testnet deployment</li>
-							<li style="margin-bottom: 0.5rem;">📅 Privacy validation</li>
-						</ul>
-					</div>
-
-					<div style="background: var(--gray-700); padding: 2rem; border-radius: 16px; border: 1px solid var(--gray-600);">
-						<h3 style="color: #10b981; margin-bottom: 1rem;">Q1 2026</h3>
-						<h4 style="color: var(--light); margin-bottom: 1rem;">Mainnet Launch</h4>
-						<ul style="text-align: left; list-style: none; padding: 0; color: var(--gray-300);">
-							<li style="margin-bottom: 0.5rem;">📅 Genesis block creation</li>
-							<li style="margin-bottom: 0.5rem;">📅 Global node distribution</li>
-							<li style="margin-bottom: 0.5rem;">📅 Exchange integrations</li>
-							<li style="margin-bottom: 0.5rem;">📅 Mobile app release</li>
-						</ul>
-					</div>
-				</div>
-
-				<div style="text-align: center;">
-					<a href="https://netcoin-ntc.github.io/netcoin-docs/docs/ROADMAP.html" class="btn btn-primary" style="margin-right: 1rem;">View Full Roadmap</a>
-					<a href="https://github.com/netcoin-ntc/netcoin-internal" class="btn btn-secondary">Technical Specifications</a>
-				</div>
-			</div>
-		</section>
 
 		<!-- Community Section -->
 		<section class="section">
